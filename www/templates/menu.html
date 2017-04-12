@@ -1,0 +1,9 @@
+<style ng-if="notification.messagesNew">ion-tabs .ion-chatbubble-working:after{content:'{{notification.messagesNew}}'}</style>
+<ion-tabs ng-class="{'tabs-item-hide': $root.hideTabs}" class="tabs-positive tabs-icon tabs-color-active-light">
+  <ion-tab icon="ion-chatbubble-working status-notification" ui-sref="app.home">
+    <ion-nav-view name="app-home"></ion-nav-view>
+  </ion-tab>
+  <ion-tab icon="ion-android-more-horizontal" ui-sref="app.switch">
+    <ion-nav-view name="app-switch"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
